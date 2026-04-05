@@ -17,8 +17,13 @@ https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7
 *(Screen recording of the easy-to-use Streamlit Web App in action)*
 
 ### 2. High-Speed Pipeline Processing Demo
-https://github.com/user-attachments/assets/0fa51306-5742-434f-a3b2-ebb7914c0c97
-*(The tracking video you dropped originally didn't finish uploading before you clicked Commit! Please drag and drop `tracked_video (2).mp4` exactly right here, and WAIT for the "Uploading..." text to disappear before you hit Commit!)*
+
+
+
+https://github.com/user-attachments/assets/d40cd9d1-84ce-44be-bd10-2d6f3bcb857a
+
+
+*(The tracking video )*
 
 ---
 
