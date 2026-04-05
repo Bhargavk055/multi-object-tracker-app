@@ -15,12 +15,7 @@ A clean, modular Python pipeline that detects people in sports/event video foota
 ## Demonstration Video
 *(Drag and Drop your successfully processed Output Video right here when you edit this file on GitHub!)*
 [streamlit-app-2026-04-06-02-41-46.webm](https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7)
-
-
 [Uploading tracked_video (2).mp4…](https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7)
-
-
-
 
 ---
 
