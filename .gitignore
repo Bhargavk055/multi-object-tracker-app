@@ -1,0 +1,21 @@
+venv/
+env/
+.venv/
+__pycache__/
+.idea/
+.vscode/
+
+# Ignore videos
+input/*.mp4
+input/*.avi
+input/*.mkv
+input/*.mov
+!input/.gitkeep
+
+output/*.mp4
+output/screenshots/*
+!output/.gitkeep
+!output/screenshots/.gitkeep
+
+*.pt
+.DS_Store

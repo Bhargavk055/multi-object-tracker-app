@@ -1,0 +1,121 @@
+﻿============================================================
+  Multi-Object Detection & Persistent ID Tracking
+  YOLOv8 + ByteTrack Pipeline
+============================================================
+[Pipeline] Input : input/video.mp4
+[Pipeline] Resolution : 1080├ù1920
+[Pipeline] FPS        : 30.0
+[Pipeline] Frames     : 267
+[Pipeline] Duration   : 8.9s
+[Pipeline] Output: C:\Users\korup\OneDrive\Desktop\AI assignment\output\tracked_video.mp4
+
+[Tracker] Ready  ΓÇô algorithm: bytetrack
+python.exe : Traceback (most recent call last):
+At line:1 char:1
++ & "c:\Users\korup\OneDrive\Desktop\AI 
+assignment\venv\Scripts\python. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (T 
+   raceback (most recent call last)::String)   
+  [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr 
+   or
+ 
+  File "C:\Users\korup\OneDrive\Desktop\AI 
+assignment\main.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\korup\OneDrive\Desktop\AI 
+assignment\main.py", line 177, in main
+    run_pipeline(source_path, output_path,
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 show=args.show, 
+max_frames=args.max_frames)
+                 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI 
+assignment\main.py", line 114, in run_pipeline
+    tracks = tracker.update(frame)
+  File "C:\Users\korup\OneDrive\Desktop\AI 
+assignment\tracker.py", line 61, in update
+    results = self.model.track(
+        source=frame,
+    ...<5 lines>...
+        verbose=False,
+    )
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\engin
+e\model.py", line 579, in track
+    return self.predict(source=source, 
+stream=stream, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\engin
+e\model.py", line 536, in predict
+    return 
+self.predictor.predict_cli(source=source) if 
+is_cli else self.predictor(source=source, 
+stream=stream)
+                                               
+                     
+~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\engin
+e\predictor.py", line 226, in __call__
+    return list(self.stream_inference(source, 
+model, *args, **kwargs))  # merge list of 
+Results into one
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\torch\utils\_cont
+extlib.py", line 40, in generator_context
+    response = gen.send(None)
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\engin
+e\predictor.py", line 343, in stream_inference
+    self.run_callbacks("on_predict_postprocess_
+end")
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\engin
+e\predictor.py", line 514, in run_callbacks
+    callback(self)
+    ~~~~~~~~^^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\track
+ers\track.py", line 93, in 
+on_predict_postprocess_end
+    tracks = tracker.update(det, 
+result.orig_img, getattr(result, "feats", 
+None))
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\track
+ers\byte_tracker.py", line 326, in update
+    dists = self.get_dists(strack_pool, 
+detections)
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\track
+ers\byte_tracker.py", line 412, in get_dists
+    if self.args.fuse_score:
+       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\korup\OneDrive\Desktop\AI assi
+gnment\venv\Lib\site-packages\ultralytics\utils
+\__init__.py", line 328, in __getattr__
+    raise AttributeError(
+    ...<6 lines>...
+    )
+AttributeError: 
+            'IterableSimpleNamespace' object 
+has no attribute 'fuse_score'. This may be 
+caused by a modified or out of date ultralytics
+            'default.yaml' file.
+Please update your code with 'pip install -U 
+ultralytics' and if necessary replace
+            C:\Users\korup\OneDrive\Desktop\AI 
+assignment\venv\Lib\site-packages\ultralytics\c
+fg\default.yaml with the latest version from
+            https://github.com/ultralytics/ultr
+alytics/blob/main/ultralytics/cfg/default.yaml
+            
