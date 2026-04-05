@@ -4,9 +4,14 @@
 
 A clean, modular Python pipeline that detects people in sports/event video footage using **YOLOv8** and maintains persistent identity tracking across frames using **ByteTrack**.
 
-### Original Video Source
+### 🔗 Original Video Source
 *Replace the link below with your chosen public sports/event video before submission:*
 - **Source Link:** [https://youtube.com/shorts/F3SlklmUHWM](https://youtube.com/shorts/F3SlklmUHWM)
+
+---
+
+## 📸 Demonstration Video
+*(Drag and Drop your successfully processed Output Video right here when you edit this file on GitHub!)*
 
 ---
 
@@ -83,40 +88,29 @@ python -c "from ultralytics import YOLO; print(' Ready')"
 
 ##  How to Run
 
-### Option A – Use a local video file
+### Option A: Easy Web Interface (Streamlit)
+To launch the beautiful graphical user interface:
+```bash
+python -m streamlit run app.py
+```
+This will automatically open your web browser to `http://localhost:8501`.
 
-1. Place your video file in the `input/` folder.
-2. Run:
+### Option B: Command Line (Fastest)
 
+**1. Process a local video:**
 ```bash
 python main.py --source input/your_video.mp4
 ```
 
-### Option B – Download from YouTube
-
+**2. Download directly from YouTube:**
 ```bash
 python main.py --url "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-### Option C – Auto-detect
-
+**3. Auto-detect files:**
 Place any `.mp4` / `.avi` / `.mkv` file in `input/` and just run:
-
 ```bash
 python main.py
-```
-
-### Additional options
-
-```bash
-# Live preview window while processing
-python main.py --source input/video.mp4 --show
-
-# Process only first 200 frames (quick test)
-python main.py --source input/video.mp4 --max-frames 200
-
-# Custom output path
-python main.py --source input/video.mp4 --output output/my_result.mp4
 ```
 
 ---
