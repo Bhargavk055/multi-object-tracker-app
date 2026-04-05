@@ -19,7 +19,8 @@ https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7
 ### 2. High-Speed Pipeline Processing Demo
 
 
-https://github.com/user-attachments/assets/90e6eeeb-965c-4b59-845d-be02258fce58
+https://github.com/user-attachments/assets/18f92adc-c754-4954-adcc-f5e057eb16ad
+
 
 
 *(The tracking video )*
