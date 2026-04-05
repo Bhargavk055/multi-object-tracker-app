@@ -13,12 +13,11 @@ A clean, modular Python pipeline that detects people in sports/event video foota
 ## 📸 Demonstration Videos
 
 ### 1. Localhost Web Interface Demo
-https://github.com/user-attachments/assets/b1092739-285a-4489-9d2b-db60341503c0
+https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7
 *(Screen recording of the easy-to-use Streamlit Web App in action)*
 
 ### 2. High-Speed Pipeline Processing Demo
-https://github.com/user-attachments/assets/0825bb91-ebbd-4e25-88bc-702be9c2e3e7
-*(Direct output showing YOLOv8 and ByteTrack trajectories)*
+*(The tracking video you dropped originally didn't finish uploading before you clicked Commit! Please drag and drop `tracked_video (2).mp4` exactly right here, and WAIT for the "Uploading..." text to disappear before you hit Commit!)*
 
 ---
 
