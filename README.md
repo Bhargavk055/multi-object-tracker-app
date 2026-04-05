@@ -4,21 +4,21 @@
 
 A clean, modular Python pipeline that detects people in sports/event video footage using **YOLOv8** and maintains persistent identity tracking across frames using **ByteTrack**.
 
-### 🔗 Original Video Source
+### Original Video Source
 *Replace the link below with your chosen public sports/event video before submission:*
 - **Source Link:** [https://youtube.com/shorts/F3SlklmUHWM](https://youtube.com/shorts/F3SlklmUHWM)
 
 ---
 
-## 🔥 Features & Optional Enhancements Implemented
-- ✅ **Multi-Object Tracking:** YOLOv8 + ByteTrack for handling occlusions and identity persistence.
-- ✅ **Trajectory Visualization:** Keeps a track history and draws movement tails for subjects.
-- ✅ **Object Count Over Time:** Automatically generates a line graph (`output/stats.png`) showing the number of detected subjects at each frame.
-- ✅ **Frame Skipping:** Configurable performance boost via `PROCESS_EVERY_N_FRAMES` to easily run on CPU.
+## Features & Optional Enhancements Implemented
+-  **Multi-Object Tracking:** YOLOv8 + ByteTrack for handling occlusions and identity persistence.
+-  **Trajectory Visualization:** Keeps a track history and draws movement tails for subjects.
+-  **Object Count Over Time:** Automatically generates a line graph (`output/stats.png`) showing the number of detected subjects at each frame.
+-  **Frame Skipping:** Configurable performance boost via `PROCESS_EVERY_N_FRAMES` to easily run on CPU.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AI assignment/
@@ -38,7 +38,7 @@ AI assignment/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Prerequisites
 
@@ -76,12 +76,12 @@ This installs:
 ### Step 3 – Verify installation
 
 ```bash
-python -c "from ultralytics import YOLO; print('✅ Ready')"
+python -c "from ultralytics import YOLO; print(' Ready')"
 ```
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option A – Use a local video file
 
@@ -121,7 +121,7 @@ python main.py --source input/video.mp4 --output output/my_result.mp4
 
 ---
 
-## 📦 Output
+##  Output
 
 After processing, you will find:
 
@@ -138,7 +138,7 @@ Each frame in the output video shows:
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 All tuneable parameters are in `config.py`:
 
@@ -152,7 +152,7 @@ All tuneable parameters are in `config.py`:
 
 ---
 
-## 🧪 Dependencies
+##  Dependencies
 
 - Python ≥ 3.9
 - ultralytics ≥ 8.0.0
@@ -163,7 +163,7 @@ All tuneable parameters are in `config.py`:
 
 ---
 
-## 📝 Assumptions
+##  Assumptions
 
 1. Input video contains **people/players** as the primary objects of interest.
 2. Video is at a reasonable resolution (480p–1080p) and frame rate (15–60 FPS).
