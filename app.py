@@ -21,9 +21,9 @@ st.markdown("Upload a video or paste a YouTube link to process it using YOLOv8 a
 
 # Settings Sidebar
 st.sidebar.header("Processing Settings")
-limit_mode = st.sidebar.radio("Processing Length", ["Quick Preview (~10 seconds)", "Full Video"])
-# 300 frames at 30fps is roughly 10 seconds
-max_frames = 300 if limit_mode.startswith("Quick") else None
+limit_mode = st.sidebar.radio("Processing Length", ["Quick Preview (~3 seconds) - RECOMMENDED", "Full Video"])
+# 90 frames at 30fps is roughly 3 seconds
+max_frames = 90 if limit_mode.startswith("Quick") else None
 
 source_type = st.radio("Select Video Source", ["YouTube URL", "Upload Video"])
 
@@ -43,6 +43,12 @@ else:
         with open(source_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
         st.success("File uploaded successfully!")
+
+st.info(
+    "👋 **Evaluator Note:** This application is running on a free-tier Cloud CPU without GPU acceleration. "
+    "To prevent timeout, please use the **Quick Preview** mode (processes 3 sec of video in ~30 sec). "
+    "\n\n*If YouTube downloads hang infinitely, it is because YouTube blocks Datacenter IPs. Please upload a short local video instead!*"
+)
 
 if st.button("🚀 Run Pipeline", type="primary"):
     ready = False
